@@ -3,18 +3,6 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
 
-const Button = () => {
-  return (
-    <div className={styles["text-box"]}>
-      <a
-        href="#"
-        className={`${styles["btn"]} ${styles["btn-white"]} ${styles["btn-animate"]}`}
-      >
-        click me
-      </a>
-    </div>
-  );
-};
 
 const Signup = () => {
   const [data, setData] = useState({
@@ -52,7 +40,7 @@ const Signup = () => {
     <div className={styles.signup_container}>
       <div className={styles.signup_form_container}>
         <div className={styles.left}>
-          <h1>Create a new account.</h1>
+          <h1>Add new account.</h1>
           <Link to="/login">
             <button type="button" className={styles.white_btn}>
               SignIn
@@ -100,7 +88,6 @@ const Signup = () => {
             />
             {error && <div className={styles.error_msg}>{error}</div>}
             <div className="">
-              {/* <Button /> */}
             </div>
             <button type="submit" className={styles.green_btn}>
 							Sign Up

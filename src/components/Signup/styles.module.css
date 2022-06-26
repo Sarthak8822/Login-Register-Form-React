@@ -5,15 +5,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: sans-serif;
-    font-weight: bold;
-	font-family: sans-serif;
-    font-weight: bold;
 }
 
 .signup_form_container {
-	width: 1200px;
-	height: 700px;
+	width: 900px;
+	height: 500px;
 	display: flex;
 	border-radius: 10px;
 	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
@@ -33,10 +29,16 @@
 
 .left h1 {
 	margin-top: 0;
+    align-items: center;
 	color: white;
 	font-size: 35px;
 	align-self: center;
 }
+@media screen and (max-width: 600px) {
+    .left h1 {
+      padding-left: 50px;
+    }
+  }
 
 .right {
 	flex: 2;
@@ -93,147 +95,10 @@
 	font-weight: bold;
 	font-size: 14px;
 	cursor: pointer;
-	overflow-x:hidden;
-	overflow-y: hidden;
 }
 
 .green_btn {
 	background-color: #3bb19b;
 	color: white;
 	margin: 10px;
-}
-
-.green_btn:link,
-.green_btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-    position: relative;
-}
-
-.green_btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.green_btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.green_btn-white {
-    background-color: #fff;
-    color: #777;
-}
-
-.green_btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-
-.green_btn-white::after {
-    background-color: #fff;
-}
-
-.green_btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.green_btn-animated {
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-.text-box {
-    margin-left: 44vw;
-   margin-top: 42vh;
-}
-
-.btn:link,
-.btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-    position: absolute;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-white {
-    background-color: #fff;
-    color: #777;
-}
-
-.btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-
-.btn-white::after {
-    background-color: #fff;
-}
-
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn-animated {
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
 }
